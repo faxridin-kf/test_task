@@ -1,0 +1,414 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Noto Sans',
+    sans-serif;
+
+  font-family: 'Roboto',
+    sans-serif;
+}
+
+.bg {
+  background-image: url('./images/blur-hospital.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+
+.container {
+  max-width: 1360px;
+  margin: 0 auto;
+}
+
+.header {
+  padding-top: 40px;
+
+}
+
+.header-flex-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.left-side {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.first-info-block {
+  margin-right: 40px;
+}
+
+.info-block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 230px;
+  text-decoration: none;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.025em;
+
+  color: #5A5A5A;
+}
+
+.info-text {
+  margin-left: 20px;
+}
+
+/* right-side */
+.right-side {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.fb-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 160px;
+  background: #fff;
+  padding: 14px 10px;
+  border-radius: 25px;
+  text-decoration: none;
+  margin: 0 50px;
+}
+
+.fb-link-text {
+  color: #0D4C93;
+  /* margin-left: 10px; */
+}
+
+.set-lang {
+  max-width: 140px;
+  background: #fff;
+  border-radius: 25px;
+  padding: 10px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.lang-name {
+  color: #0D4C93;
+}
+
+/* navbar */
+.navigation {
+  margin-top: 48px;
+  padding-bottom: 70px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+  list-style: none;
+  background: #fff;
+  border-radius: 25px
+}
+
+.navbar-link {
+  text-decoration: none;
+}
+
+.navbar li {
+  border-left: 2px solid #F2F2F2;
+
+  padding: 24px 55px;
+  display: inline-block;
+  text-align: center;
+}
+
+.navbar li:first-child {
+  border-left: none;
+}
+
+/* first-page */
+.first-page {
+  padding-bottom: 80px;
+}
+
+.first-page-flex-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.first-page-left-side h1 {
+  margin-bottom: 30px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 59px;
+  letter-spacing: 0.09em;
+
+  color: #0D4C93;
+}
+
+.description {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 40px;
+  margin-bottom: 40px;
+
+  /* or 167% */
+
+  color: #363535;
+}
+
+.learn-more {
+  background: linear-gradient(90deg, #0D4C93 0%, #00C9C9 100%);
+  opacity: 0.9;
+  border-radius: 35px;
+  border: none;
+
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+
+  color: #FFFFFF;
+  padding: 21px 70px;
+}
+
+/* products */
+.product-title {
+  text-align: center;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 47px;
+  margin: 60px 0;
+  /* identical to box height */
+
+  color: #0D4C93;
+
+}
+
+.products {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: linear-gradient(180deg, #F8F8F8 0%, rgba(248, 248, 248, 0) 100%);
+  opacity: 0.9;
+  border-radius: 35px;
+  margin-bottom: 55px;
+  width: 439px;
+  /* height: 439px; */
+}
+
+.card-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  /* width: 50%; */
+  padding: 52px 107px;
+  padding-bottom: 0;
+}
+
+.good-name {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  letter-spacing: 0.105em;
+  margin-top: 35px;
+  margin-bottom: 27px;
+
+  color: #000000;
+}
+
+.about {
+  padding: 24px 64px;
+  background: linear-gradient(90deg, #0D4C93 0%, #00C9C9 100%);
+  opacity: 0.9;
+  border-radius: 35px;
+  border: none;
+  color: #fff;
+  display: block;
+  width: 270px;
+  margin: 0 auto;
+  margin-bottom: 42px;
+}
+
+.all-products {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  margin: 0 auto;
+  margin-bottom: 70px;
+
+
+  color: #0D4C93;
+}
+
+.all-products img {
+  vertical-align: middle;
+}
+
+/* service */
+.service-bg {
+  background-image: url('./images/bg2.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+
+}
+
+.services {
+  padding-top: 78px;
+  padding-bottom: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.service-img {
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+}
+
+.service-title {
+  text-align: center;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 47px;
+
+  /* identical to box height */
+
+  color: #0D4C93;
+  margin-bottom: 68px;
+}
+
+.service-card {
+  background: #FFFFFF;
+  border-radius: 50px;
+  max-width: 388px;
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.service-text {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+  letter-spacing: 0.065em;
+  margin-top: 30px;
+  margin-bottom: 14px;
+  text-align: center;
+
+  color: #0D4C93;
+}
+
+.service-description {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  width: 300px;
+  margin: 0 auto;
+
+  /* or 150% */
+  text-align: center;
+  padding-bottom: 35px;
+  color: #000000;
+
+}
+
+.service-btn {
+  background: linear-gradient(90deg, #0D4C93 0%, #00C9C9 100%);
+  opacity: 0.9;
+  border-radius: 35px;
+  padding: 15px 84px;
+  border: none;
+  position: absolute;
+
+  display: block;
+  width: 270px;
+  margin: 0 auto;
+  margin-left: 14%;
+  margin-top: -20px;
+  /* margin-left: 20px; */
+}
+
+/* about-us */
+.about-us{
+  padding-bottom: 108px;
+}
+.about-us-title{
+  text-align: center;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 47px;
+
+  /* identical to box height */
+
+  color: #0D4C93;
+  margin-top: 68px;
+  margin-bottom: 50px;
+}
+.about-us-bg{
+  background-image: url('./images/gr.png');
+  background-repeat: no-repeat;
+  padding-bottom: 45px;
+}
+
+.company-description{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 35px;
+  letter-spacing: 0.06em;
+  padding-bottom: 30px;
+
+  color: #000000;
+  
+}
+.about-us-logo{
+  position: absolute;
+}
+.right-side-aboutus{
+  max-width: 702px;
+  margin-right: -150px;
+}
+.description-text{
+  margin-top: 80px;
+  margin-bottom: 20px;
+}
+.aboutus-btn{
+  background: linear-gradient(90deg, #0D4C93 0%, #00C9C9 100%);
+  opacity: 0.9;
+  border-radius: 35px;
+  padding: 15px 60px;
+  border: none;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.04em;
+
+
+  color: #FFFFFF;
+}
