@@ -1,38 +1,35 @@
-var swiper = new Swiper(".mySwiper", {
-  slidesPerView: 3,
-  spaceBetween: 30,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-});
-var swiperr = new Swiper(".mySwiper", {
-  slidesPerView: 3,
-  grid: {
-    rows: 2,
-  },
-  spaceBetween: 30,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-});
+const searchBtn = document.querySelector('.search')
+const searchInput = document.querySelector('.search-input')
+const logo = document.querySelector('.logo')
+// Change option selected
+const label = document.querySelector('.dropdown__filter-selected')
+const options = Array.from(document.querySelectorAll('.dropdown__select-option'))
 
-const buildSwiperSlider = sliderElm => {
-  const sliderIdentifier = sliderElm.dataset.id;
-  return new Swiper(`#${sliderElm.id}`, {
-    navigation: {
-      nextEl: `.swiper-button-next-${sliderIdentifier}`,
-      prevEl: `.swiper-button-prev-${sliderIdentifier}`
-    },
-    pagination: {
-      el: `.swiper-pagination-${sliderIdentifier}`,
-      type: 'progressbar',
-    },
-  });
+options.forEach((option) => {
+  option.addEventListener('click', () => {
+    label.textContent = option.textContent
+  })
+})
+
+// Close dropdown onclick outside
+document.addEventListener('click', (e) => {
+  const toggle = document.querySelector('.dropdown__switch')
+  const element = e.target
+
+  if (element == toggle) return;
+
+  const isDropdownChild = element.closest('.dropdown__filter')
+
+  if (!isDropdownChild) {
+    toggle.checked = false
+  }
+})
+
+searchBtn.addEventListener('click', (e) => {
+  searchInput.classList.toggle('input-visible')
+  logo.classList.toggle('hide-logo')
+})
+const showInput = () => {
+
 }
-// Get all of the swipers on the page
-const allSliders = document.querySelectorAll('.swiper');
 
-// Loop over all of the fetched sliders and apply Swiper on each one.
-allSliders.forEach(slider => buildSwiperSlider(slider))
