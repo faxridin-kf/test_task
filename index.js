@@ -5,6 +5,8 @@ const logo = document.querySelector('.logo')
 const label = document.querySelector('.dropdown__filter-selected')
 const options = Array.from(document.querySelectorAll('.dropdown__select-option'))
 
+
+
 options.forEach((option) => {
   option.addEventListener('click', () => {
     label.textContent = option.textContent
@@ -29,7 +31,4 @@ searchBtn.addEventListener('click', (e) => {
   searchInput.classList.toggle('input-visible')
   logo.classList.toggle('hide-logo')
 })
-const showInput = () => {
-
-}
 
