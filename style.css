@@ -55,7 +55,8 @@ button {
   display: none;
 }
 
-html, body {
+html,
+body {
   overflow-x: hidden;
   height: 100%;
 }
@@ -121,12 +122,12 @@ html, body {
   text-decoration: none;
 }
 
-input[type="checkbox"]:checked ~ #sidebarMenu {
+input[type='checkbox']:checked ~ #sidebarMenu {
   -webkit-transform: translateX(0);
           transform: translateX(0);
 }
 
-input[type=checkbox] {
+input[type='checkbox'] {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   -webkit-box-sizing: border-box;
@@ -190,7 +191,7 @@ input[type=checkbox] {
   margin-top: 3px;
 }
 
-input[type=checkbox]:checked ~ .sidebarIconToggle > .horizontal {
+input[type='checkbox']:checked ~ .sidebarIconToggle > .horizontal {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   -webkit-box-sizing: border-box;
@@ -198,7 +199,7 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .horizontal {
   opacity: 0;
 }
 
-input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-1 {
+input[type='checkbox']:checked ~ .sidebarIconToggle > .diagonal.part-1 {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   -webkit-box-sizing: border-box;
@@ -208,7 +209,7 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-1 {
   margin-top: 8px;
 }
 
-input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
+input[type='checkbox']:checked ~ .sidebarIconToggle > .diagonal.part-2 {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   -webkit-box-sizing: border-box;
@@ -1661,9 +1662,48 @@ option {
   }
 }
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 375px) {
   .container {
-    max-width: 300px;
+    max-width: 320px;
+  }
+  .left-side,
+  .info-block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+  }
+  .info-block {
+    margin-right: 0;
+  }
+  .left-side {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .set-lang {
+    display: none;
+  }
+  .description-text {
+    width: 319px;
+  }
+  .slide-card {
+    width: 320px !important;
+  }
+  .right-side-aboutus {
+    width: 300px;
+  }
+  .sidebarMenu {
+    margin-top: -172px;
   }
 }
 /*# sourceMappingURL=style.css.map */
