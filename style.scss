@@ -854,12 +854,17 @@ input[type='checkbox']:checked ~ .sidebarIconToggle > .diagonal.part-2 {
   text-decoration: none;
   color: #0d4c93;
 }
-
-.option-link:hover,
-.option-link svg:hover {
+.option-link:hover .option-link-svg,
+.option-link:hover {
   color: #00c9c9;
   fill: #00c9c9;
 }
+
+// .option-link:hover,
+// .option-link svg:hover {
+//   color: #00c9c9;
+//   fill: #00c9c9;
+// }
 
 .option-link svg {
   vertical-align: middle;
